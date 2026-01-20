@@ -7,8 +7,8 @@ const foodRouter = express.Router();
 //Image Stroage Engine
 const storage = multer.diskStorage({
   destination: 'uploads',
-  filename: (req, res, cb) => {
-    return BaseCollection(null, `${Date.now()}${file.originalname}`);
+  filename: (req, file, cb) => {
+    return cb(null, `${Date.now()}${file.originalname}`);
   },
 });
 
