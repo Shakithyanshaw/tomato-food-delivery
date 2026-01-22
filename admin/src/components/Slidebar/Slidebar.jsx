@@ -1,23 +1,24 @@
 import React from 'react';
 import './Slidebar.css';
 import { assets } from '../../assets/assets';
+import { NavLink } from 'react-router-dom';
 
 const Slidebar = () => {
   return (
     <div className="slidebar">
       <div className="slidebar-options">
-        <div className="slidebar-option">
+        <NavLink to="/add" className="slidebar-option">
           <img src={assets.add_icon} alt="" />
           <p>Add Items</p>
-        </div>
-        <div className="slidebar-option">
+        </NavLink>
+        <NavLink to="/list" className="slidebar-option">
           <img src={assets.order_icon} alt="" />
           <p>List Items</p>
-        </div>
-        <div className="slidebar-option">
+        </NavLink>
+        <NavLink to="/orders" className="slidebar-option">
           <img src={assets.order_icon} alt="" />
           <p>Order Items</p>
-        </div>
+        </NavLink>
       </div>
     </div>
   );
