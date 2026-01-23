@@ -27,7 +27,7 @@ const Add = () => {
           ></textarea>
         </div>
         <div className="add-category-price">
-          <div className="add-category flex col">
+          <div className="add-category flex-col">
             <p>Product Category</p>
             <select name="category">
               <option value="Salad">Salad</option>
