@@ -51,3 +51,10 @@ This project includes a **User Frontend**, **Admin Panel**, and **Backend API**.
 ---
 
 ## 📂 Project Structure
+
+food-ordering-app/
+│
+├── frontend/ # User website
+├── admin/ # Admin panel
+├── backend/ # Server & API
+└── README.md
